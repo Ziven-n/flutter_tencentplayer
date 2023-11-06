@@ -37,7 +37,7 @@ class TencentPlayerValue {
     this.netSpeed,
     this.fps = 0,
     this.rate = 1.0,
-    this.bitrateIndex = 0, //TODO 默认清晰度
+    this.bitrateIndex = 0, //默认清晰度
     this.orientation = 0,
     this.degree = 0,
     this.eventCode,

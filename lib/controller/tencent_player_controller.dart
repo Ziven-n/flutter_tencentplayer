@@ -114,7 +114,8 @@ class TencentPlayerController extends ValueNotifier<TencentPlayerValue> {
         case 'netStatus':
           int fps = map['fps'].toInt();
           // 忽略小于3的帧率浮动
-          if (value.netSpeed == map['netSpeed'] && (value.fps! - fps).abs() < 3) return;
+          if (value.netSpeed == map['netSpeed'] && (value.fps! - fps).abs() < 3)
+            return;
           value = value.copyWith(
             netSpeed: map['netSpeed'],
             fps: fps,
@@ -194,6 +195,7 @@ class TencentPlayerController extends ValueNotifier<TencentPlayerValue> {
     if (_isDisposed) {
       return;
     }
+    // ignore: unnecessary_null_comparison
     if (moment == null) {
       return;
     }
@@ -246,7 +248,7 @@ class _VideoAppLifeCycleObserver with WidgetsBindingObserver {
   _VideoAppLifeCycleObserver(this._controller);
 
   void initialize() {
-    WidgetsBinding.instance!.addObserver(this);
+    WidgetsBinding.instance.addObserver(this);
   }
 
   @override
@@ -266,6 +268,6 @@ class _VideoAppLifeCycleObserver with WidgetsBindingObserver {
   }
 
   void dispose() {
-    WidgetsBinding.instance!.removeObserver(this);
+    WidgetsBinding.instance.removeObserver(this);
   }
 }
