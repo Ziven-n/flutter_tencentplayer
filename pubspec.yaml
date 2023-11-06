@@ -1,11 +1,11 @@
 name: flutter_tencentplayer
 description: Is a native plugin for playing Tencent Cloud on-demand videos, live streaming, offline downloads, etc.
-version: 2.0.1
+version: 2.0.2
 homepage: https://github.com/qq326646683/flutter_tencentplayer
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.10.0 <3.0.0"
+  sdk: ">=2.12.0 <4.0.0"
+  flutter: ">=1.10.0 <4.0.0"
 
 dependencies:
   flutter:
