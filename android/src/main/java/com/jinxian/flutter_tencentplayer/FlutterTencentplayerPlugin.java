@@ -8,6 +8,8 @@ import android.util.LongSparseArray;
 import android.view.OrientationEventListener;
 import android.view.Surface;
 
+import io.flutter.embedding.android.FlutterActivity;
+import io.flutter.embedding.engine.FlutterEngine;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler;
